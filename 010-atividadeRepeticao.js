@@ -16,17 +16,16 @@
         console.log('Digite apenas números:');
     } else {
       console.log('Contagem: ');
-      
-      if(n1 < n2) {
-
-    for(let n = n1; n <= n2; n++) {
-      console.log(n);
-      
-    }
-
-  } else if (n1 > n2) {
-    for (let n = n1; n >= n2; n--) {
+ 
+      if (n1 < n2) {
+  for (let n = n1; n <= n2; n--) {
     console.log(n);
   }
+} else if (n1 > n2) {
+  for (let n = n1; n >= n2; n++) {
+    console.log(n);
+  }
+} else {
+  console.log("Os números são iguais:", n1);
 }
-};
+   }
